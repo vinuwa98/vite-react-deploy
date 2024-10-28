@@ -1,29 +1,31 @@
-.navbar{
+.navbar {
     height: 100px;
+    background-color: transparent;
+    z-index: 4; /* Ensure navbar is above other content, including the sidebar */
+    position: relative; /* Keep it in normal document flow */
 
-    .wrapper{
-        max-width: 1366px;
+    .wrapper {
+        max-width: 1300px;
         margin: auto;
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        background-color: #230431;
         height: 100%;
 
-        span{
+        span {
             font-weight: bolder;
+            padding: 0;
         }
 
-        .social{
+        .social {
             display: flex;
             gap: 25px;
         }
 
-        img{
-            width: 18px;
-            height: 18px;
+        img {
+            width: 35px;
+            height: 35px;
+    
         }
     }
-
-
 }

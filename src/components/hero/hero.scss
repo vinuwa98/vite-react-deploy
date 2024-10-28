@@ -1,0 +1,33 @@
+.hero {
+    height: calc(100vh - 100px);
+    overflow: hidden; /* Hides anything that overflows this container */
+    background: linear-gradient(180deg, #1c0327, #43075c);
+    position: relative;
+    
+    .wrapper{
+        max-width:1300px;
+        height: 100%;
+        margin: auto;
+    }
+
+    .textContainer{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+
+        img{
+            width: 50px;
+        }
+    }
+
+    .imageContainer {
+        height: 100%;
+        position:absolute;
+        top: 0;
+        right: 0;      
+    }
+
+}
