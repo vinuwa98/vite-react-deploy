@@ -1,3 +1,34 @@
+/* Apply scroll snapping behavior to the entire HTML document */
+html {
+    /* Set the scroll snapping axis to the vertical (y) direction 
+       and make snapping mandatory, so each scroll will land at 
+       the start of the next section */
+    scroll-snap-type: y mandatory;
+
+    /* Enable smooth scrolling for a more gradual, visually appealing 
+       transition between sections */
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"DM Sans", sans-serif;
+}
+
+body{
+    background-color: #0D0D23;
+    color: lightgrey;
+}
+
+/* Style for each <section> element within the document */
 section {
-    height:100vh;
+    /* Set each section's height to take up the full viewport height,
+       making each section appear as a full-page slide */
+    height: 100vh;
+
+    /* Align each section in the center when snapping occurs,
+       ensuring each section smoothly centers within the viewport */
+    scroll-snap-align: center;
 }
