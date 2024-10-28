@@ -1,5 +1,6 @@
 // Import the main SCSS file for the app's styles
 import "./app.scss"
+import Navbar from "./components/navbar/navbar";
 
 // Define the main App component, which serves as the root of the application
 const App = () => {
@@ -8,7 +9,9 @@ const App = () => {
   return <div>
       {/* This section will serve as the 'Hero' section, typically containing the main
           title, subtitle, or introductory content that users see first */}
-      <section>Hero</section>
+      <section>
+        <Navbar/>
+      </section>
       
       {/* This section is likely intended for a 'Parallax' effect, creating a visually
           engaging experience where background content moves at a different speed
