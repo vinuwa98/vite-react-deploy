@@ -1,5 +1,5 @@
-import "./hero.scss";
 import { motion } from "framer-motion";
+import "./hero.scss";
 
 const textVariants = {
   initial: {
@@ -11,31 +11,17 @@ const textVariants = {
     opacity: 1,
     transition: {
       duration: 1,
-      staggerChildren: 0.1, // Staggers child animations
+      staggerChildren: 0.3, // Staggers child animations
     },
   },
 
   scrollButton:{
     opacity:0,
-    y:30,
+    y:50,
     transition:{
       duration:2,
       repeat:Infinity,
     }
-  },
-};
-
-const sliderVariants = {
-  initial: {
-    x: 0,
-  },
-  animate: {
-    x: "-700%",
-    transition: {
-      repeat:Infinity,
-      repeatType:"mirror",
-      duration: 60,
-    },
   },
 };
 
@@ -56,22 +42,21 @@ const Hero = () => {
         >
           <motion.h2 variants={textVariants}>Passionate Software Engineer</motion.h2>
           <motion.h1 variants={textVariants}>
-            Software Engineer <br /> and <br /> Information Technology Tutor
+            Software Engineer <br /> and <br /> ICT Tutor
           </motion.h1>
 
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants}>
-              See the latest Work
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
-          </motion.div> 
+            <motion.button>See the latest Work</motion.button>
+            <motion.button>Contact Me</motion.button>
+          </motion.div>
+          
           <motion.img variants={textVariants} animate= "scrollButton" src="/scroll.png" alt="scroll" />
         </motion.div>
       </div>
 
-      <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate" >
-        Coder Gamer Guitarist ScieceLover Tutor
-      </motion.div>
+      <div className="slidingTextContainer">
+        Coder Tutor ScienceLover Gamer 
+      </div>
 
       <div className="imageContainer">
         <img src="/hero.png" alt="hero" />
