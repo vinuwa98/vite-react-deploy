@@ -1,4 +1,5 @@
 import "./parallax.scss";
+import {motion} from "framer-motion";
 
 const Parallax = ({ type }) => {
   return (
@@ -11,10 +12,10 @@ const Parallax = ({ type }) => {
                     : "linear-gradient(180deg, #43075c, #1c0327)",
         }}
     >
-        <h1>{type === "services" ? "What I Do?" : "What I Did?"}</h1>
-        <div className="mountains"></div>
-        <div className="planets"></div>
-        <div className="stars"></div>
+        <motion.h1>{type === "services" ? "What I Do?" : "What I Did?"}</motion.h1>
+        <motion.div className="mountains"></motion.div>
+        <motion.div className="planets"></motion.div>
+        <motion.div className="stars"></motion.div>
     </div>
   );
 };
