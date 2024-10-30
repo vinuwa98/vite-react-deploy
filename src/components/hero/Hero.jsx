@@ -25,33 +25,9 @@ const textVariants = {
   },
 };
 
-const sliderVariants = {
-  initial: {
-    x: -500,
-    opacity: 0,
-  },
-  animate: {
-    x: 0,
-    opacity: 1,
-    transition: {
-      duration: 1,
-      staggerChildren: 0.3, // Staggers child animations
-    },
-  },
-
-  scrollButton:{
-    opacity:0,
-    y:50,
-    transition:{
-      duration:2,
-      repeat:Infinity,
-    }
-  },
-};
-
 const childVariants = {
   initial: { opacity: 0, x: -50 },
-  animate: { opacity: 1, x: 0, transition: { duration: 0.1 } },
+  animate: { opacity: 1, x: 0, transition: { duration: 0.7 } },
 };
 
 const Hero = () => {
