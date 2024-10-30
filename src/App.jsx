@@ -1,6 +1,7 @@
 import "./app.scss";
 import Hero from "./components/hero/Hero";
 import Navbar from "./components/navbar/navbar";
+import Parallax from "./components/parallax/Parallax";
 
 const App = () => {
   return (
