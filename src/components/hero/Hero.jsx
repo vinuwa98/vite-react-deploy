@@ -47,6 +47,7 @@ const childVariants = {
 const Hero = () => {
   return (
     <div className="hero">
+      <motion.div className="stars"></motion.div>
       <div className="wrapper">
         <motion.div
           className="textContainer"
