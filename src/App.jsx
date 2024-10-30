@@ -10,8 +10,10 @@ const App = () => {
         <Hero/>
       </section>
 
-      <section id="Services">Services</section>
-      <section id="Portfolio">Portfolio</section>
+      <section id="Services"><Parallax type="Services"/></section>
+      <section>Services</section>
+      <section id="Portfolio"><Parallax type="Portfolio"/></section>
+      <section>Portfolio</section>
       <section id="Contact">Contact</section>
       <section id="AboutUs">About Us</section>
     </div>
