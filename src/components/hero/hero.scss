@@ -59,5 +59,15 @@
         white-space: nowrap;
         color: #88878813;
     }
+
+    .stars{
+        background-image: url("/stars.png");
+        background-size: cover;
+        background-position: bottom;
+        width: 150%;
+        height: 150%;   
+        position: absolute;
+        z-index: 1;
+    }
     
 }
