@@ -10,8 +10,8 @@ const Hero = () => {
 
   // Track mouse movement within the hero section
   const handleMouseMove = (event) => {
-    cursorX.set(event.clientX / window.innerWidth - 0.5); // Normalize to [-0.5, 0.5]
-    cursorY.set(event.clientY / window.innerHeight - 0.5); // Normalize to [-0.5, 0.5]
+    cursorX.set(event.clientX / window.innerWidth - 0.2); // Normalize to [-0.5, 0.5]
+    cursorY.set(event.clientY / window.innerHeight - 0.2); // Normalize to [-0.5, 0.5]
   };
 
   // Apply small transformations to the background based on cursor movement
@@ -22,12 +22,12 @@ const Hero = () => {
   const continuousAnimation = useAnimation();
   React.useEffect(() => {
     continuousAnimation.start({
-      x: ["-15%", "15%"],
-      y: ["-15%", "15%"],
+      x: ["-5%", "5%"],
+      y: ["-5%", "5%"],
       transition: {
         repeat: Infinity,
         repeatType: "mirror",
-        duration: 10, // Slow movement
+        duration: 20, // Slow movement
       },
     });
   }, [continuousAnimation]);
