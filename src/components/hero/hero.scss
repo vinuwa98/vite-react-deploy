@@ -1,35 +1,31 @@
 .hero {
     height: calc(100vh - 100px);
-    overflow: hidden; /* Hides anything that overflows this container */
+    overflow: hidden;
     background: linear-gradient(180deg, #1c0327, #43075c);
     position: relative;
-    
-    .wrapper{
+
+    .wrapper {
         max-width: 1300px;
         height: 100%;
         margin: auto;
-
-        .textContainer{
+        .textContainer {
             height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             gap: 40px;
-
-            h2{
+            h2 {
                 font-size: 40px;
                 color: rgb(151, 51, 153);
                 letter-spacing: 14px;
             }
-
-            h1{
+            h1 {
                 font-size: 64px;
             }
-
-            .buttons{
-                button{ 
+            .buttons {
+                button {
                     padding: 20px;
-                    border: 1px solid white  ;
+                    border: 1px solid white;
                     border-radius: 10px;
                     background-color: transparent;
                     color: white;
@@ -38,8 +34,7 @@
                     font-weight: 300;
                 }
             }
-
-            img{
+            img {
                 width: 50px;
             }
         }
@@ -47,27 +42,27 @@
 
     .imageContainer {
         height: 100%;
-        position:absolute;
+        position: absolute;
         top: 0;
-        right: 0;      
+        right: 0;
+        z-index: 2;
     }
 
-    .slidingTextContainer{
+    .slidingTextContainer {
         position: absolute;
-        font-size: 50vh;
+        font-size: 8vw;
         bottom: -100px;
         white-space: nowrap;
         color: #88878813;
     }
 
-    .stars{
+    .stars {
         background-image: url("/stars.png");
         background-size: cover;
         background-position: bottom;
         width: 100%;
-        height: 100%;   
+        height: 100%;
         position: absolute;
         z-index: 1;
     }
-    
 }
