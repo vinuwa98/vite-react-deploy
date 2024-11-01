@@ -49,8 +49,7 @@
         height: 100%;
         position: absolute;
         top: 0;
-        right: 0;     
-        z-index: 9; 
+        right: 0;      
     }
 
     .slidingTextContainer {
@@ -68,9 +67,12 @@
         width: 150%;
         height: 150%;   
         position: absolute;
+<<<<<<< HEAD
         top: 0; // Align to the top to center vertically
         left: 50%; // Center horizontally
         transform: translateX(-50%); // Center the image correctly
+=======
+>>>>>>> parent of f5c9f46 (Add Background Updates)
         z-index: 1;
         opacity: 80%;
     }
