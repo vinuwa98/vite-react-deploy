@@ -12,8 +12,8 @@ const Hero = () => {
 
   // Track mouse movement within the hero section
   const handleMouseMove = (event) => {
-    cursorX.set(event.clientX / window.innerWidth - 0.5); // Normalize to [-0.5, 0.5]
-    cursorY.set(event.clientY / window.innerHeight - 0.5); // Normalize to [-0.5, 0.5]
+    cursorX.set(event.clientX / window.innerWidth - 0.2); // Normalize to [-0.5, 0.5]
+    cursorY.set(event.clientY / window.innerHeight - 0.2); // Normalize to [-0.5, 0.5]
   };
 
   // Apply small transformations to the background based on cursor movement
