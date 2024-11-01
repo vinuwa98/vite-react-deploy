@@ -66,6 +66,10 @@ const Hero = () => {
       <div className="imageContainer">
         <img src="/hero.png" alt="hero" />
       </div>
+      <div className="Background">
+        <img src="/stars.png" alt="hero" />
+      </div>
+
     </div>
   );
 };

@@ -1,21 +1,18 @@
-// Parallax.jsx
-
-import { useRef } from "react";
+import {useRef} from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Parallax = ({ type }) => {
-    const ref = useRef();
 
-    // Use scrollYProgress instead of scrollProgress
-    const { scrollYProgress } = useScroll({
-        target: ref,
-        offset: ["start start", "end start"]
+    const ref = useRef()
+
+    const {scrollProgress} = useScroll({
+        target:ref,
+        offset:["start start","end start"]
     });
 
-    // Transform values for y axis
-    const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-    const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    const yText = useTransform(scrollProgress, [0, 1], ["0%", "500%"]);
+    const yBg = useTransform(scrollProgress, [0, 1], ["0%", "100%"]);
 
     return (
         <div 
@@ -38,4 +35,4 @@ const Parallax = ({ type }) => {
     );
 };
 
-export default Parallax;
+export default Parallax
