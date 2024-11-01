@@ -1,46 +1,27 @@
 // Hero.jsx
 import React from "react";
 import "./hero.scss";
-import { motion, useMotionValue, useTransform, useAnimation } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 
 const Hero = () => {
-  // Cursor-based Motion Values
-  const cursorX = useMotionValue(0);
-  const cursorY = useMotionValue(0);
-
-  // Track mouse movement within the hero section
-  const handleMouseMove = (event) => {
-    cursorX.set(event.clientX / window.innerWidth - 0.5); // Normalize to [-0.5, 0.5]
-    cursorY.set(event.clientY / window.innerHeight - 0.5); // Normalize to [-0.5, 0.5]
-  };
-
-  // Apply small transformations to the background based on cursor movement
-  const xTransform = useTransform(cursorX, [-0.5, 0.5], ["-10%", "10%"]);
-  const yTransform = useTransform(cursorY, [-0.5, 0.5], ["-10%", "10%"]);
-
   // Continuous subtle background movement
   const continuousAnimation = useAnimation();
   React.useEffect(() => {
     continuousAnimation.start({
-      x: ["-5%", "5%"],
-      y: ["-5%", "5%"],
+      x: ["-28%", "0%"],  // Limited to small shifts around the center
       transition: {
         repeat: Infinity,
         repeatType: "mirror",
-        duration: 20, // Slow movement
+        duration: 15, // Slow movement for a subtle effect
       },
     });
   }, [continuousAnimation]);
 
   return (
-    <div className="hero" onMouseMove={handleMouseMove}>
-      {/* Background Stars with Continuous and Cursor-based Movement */}
+    <div className="hero">
+      {/* Background Stars with Continuous Motion */}
       <motion.div
         className="stars"
-        style={{
-          x: xTransform,
-          y: yTransform,
-        }}
         animate={continuousAnimation} // Apply continuous subtle motion
       ></motion.div>
 
