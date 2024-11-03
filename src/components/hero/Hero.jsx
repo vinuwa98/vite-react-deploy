@@ -1,5 +1,6 @@
 import "./hero.scss";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
 
 const textVariants = {
   initial: {
@@ -14,14 +15,13 @@ const textVariants = {
       staggerChildren: 0.1, // Staggers child animations
     },
   },
-
-  scrollButton:{
-    opacity:0,
-    y:30,
-    transition:{
-      duration:2,
-      repeat:Infinity,
-    }
+  scrollButton: {
+    opacity: 0,
+    y: 30,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
   },
 };
 
@@ -30,11 +30,22 @@ const sliderVariants = {
     x: 0,
   },
   animate: {
-    x: "-75%",
+    x: "-35%",
     transition: {
       repeat: Infinity,
-      repeatType:"mirror",
+      repeatType: "mirror",
       duration: 30,
+    },
+  },
+};
+
+const starsVariants = {
+  animate: {
+    x: ["-10%", "10%"], // Move from left to right
+    transition: {
+      repeat: Infinity,
+      repeatType: "mirror",
+      duration: 20, // Adjust speed as needed
     },
   },
 };
@@ -47,7 +58,11 @@ const childVariants = {
 const Hero = () => {
   return (
     <div className="hero">
-      <motion.div className="stars"></motion.div>
+      <motion.div
+        className="stars"
+        variants={starsVariants}
+        animate="animate"
+      ></motion.div>
       <div className="wrapper">
         <motion.div
           className="textContainer"
