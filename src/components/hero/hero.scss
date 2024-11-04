@@ -7,14 +7,14 @@
     .stars {
         position: absolute;
         top: 0%;
-        left: 0%;
+        right: -20%;
         width: 200%; /* Increase width for a smoother animation */
         height: 200%;
         background-image: url('/stars.png');
         background-repeat: repeat;
         background-position: center;
-        opacity: 50%; /* Adjust for desired visibility */
-        transform: translate(-20%, -20%);
+        opacity: 70%; /* Adjust for desired visibility */
+
     }
 
     .wrapper {
