@@ -6,15 +6,15 @@
 
     .stars {
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 0%;
+        left: 0%;
         width: 200%; /* Increase width for a smoother animation */
         height: 200%;
         background-image: url('/stars.png');
         background-repeat: repeat;
         background-position: center;
-        opacity: 0.3; /* Adjust for desired visibility */
-        transform: translate(-50%, -50%);
+        opacity: 50%; /* Adjust for desired visibility */
+        transform: translate(-20%, -20%);
     }
 
     .wrapper {
