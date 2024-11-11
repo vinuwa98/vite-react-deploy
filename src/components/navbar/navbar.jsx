@@ -19,7 +19,7 @@ const Navbar = () => {
           <a href="https://web.facebook.com/vinuwa.fb/"><img src="/facebook.png" alt="Facebook" /></a>
           <a href="https://www.instagram.com/vinuwa.social/"><img src="/instagram.png" alt="Instagram" /></a>
           <a href="https://www.youtube.com/@VinodWarnakulasooriya975/"><img src="/youtube.png" alt="YouTube" /></a>
-          <a href="https://www.linkedin.com/in/vinuwa/"><img src="/linkedin.jpg" alt="YouTube" /></a>
+          <a href="#"><img src="/dribbble.png" alt="Dribbble" /></a>
         </div>
       </div>
     </div>
