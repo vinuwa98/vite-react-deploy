@@ -1,45 +1,41 @@
+// Parallax.jsx
+
 import { useRef } from "react";
 import "./parallax.scss";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const Parallax = ({ type }) => {
-  const ref = useRef();
+    const ref = useRef();
 
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end start"],
-  });
+    // Use scrollYProgress instead of scrollProgress
+    const { scrollYProgress } = useScroll({
+        target: ref,
+        offset: ["start start", "end start"]
+    });
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
-  const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    // Transform values for y axis
+    const yText = useTransform(scrollYProgress, [0, 1], ["0%", "500%"]);
+    const yBg = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
 
-  return (
-    <div
-      className="parallax"
-      ref={ref}
-      style={{
-        background:
-          type === "services"
-            ? "linear-gradient(180deg, #43075c, #1c0327)"
-            : "linear-gradient(180deg, #1c0327, #43075c)",
-      }}
-    >
-      <motion.h1 style={{ y: yText }}>
-        {type === "services" ? "What We Do?" : "What We Did?"}
-      </motion.h1>
-      <motion.div className="mountains"></motion.div>
-      <motion.div
-        className="planets"
-        style={{
-          y: yBg,
-          backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
-          })`,
-        }}
-      ></motion.div>
-      <motion.div style={{ x: yBg }} className="stars"></motion.div>
-    </div>
-  );
+    return (
+        <div 
+            className="parallax"
+            ref={ref}
+            style={{
+                background: 
+                    type === "services"
+                        ? "linear-gradient(180deg, #1c0327, #43075c)" 
+                        : "linear-gradient(180deg, #43075c, #1c0327)"
+            }}
+        >
+            <motion.h1 style={{ y: yText }}>
+                {type === "services" ? "What I Do?" : "What I Did?"}
+            </motion.h1>
+            <motion.div className="mountains"></motion.div>
+            <motion.div style={{ y: yBg }} className="planets"></motion.div>
+            <motion.div style={{ x: yBg }} className="stars"></motion.div>
+        </div>
+    );
 };
 
 export default Parallax;

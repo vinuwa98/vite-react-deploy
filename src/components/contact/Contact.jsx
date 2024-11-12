@@ -12,7 +12,7 @@ const variants = {
     y: 0,
     opacity: 1,
     transition: {
-      duration: 0.2,
+      duration: 0.5,
       staggerChildren: 0.1,
     },
   },
@@ -31,10 +31,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_dx8pydd",
-        "template_o740pcq",
+        "service_94y20xo",
+        "template_v10u2oh",
         formRef.current,
-        "Gt3O6vLbyV8BO-m5Y"
+        "pX_2hasGmGcuvjXIW"
       )
       .then(
         (result) => {
@@ -58,15 +58,15 @@ const Contact = () => {
         <motion.h1 variants={variants}>Let’s work together</motion.h1>
         <motion.div className="item" variants={variants}>
           <h2>Mail</h2>
-          <span>vinuwa98@outlook.com <br/> vinuwa98@gmail.com </span>
+          <span>hello@react.dev</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Address</h2>
-          <span>No: 280 <br/> Hewaheta Road <br/> Buwella,Rikillagaskada <br/>Kandy, Central Province <br/> Postal Code 20730</span>
+          <span>Hello street New York</span>
         </motion.div>
         <motion.div className="item" variants={variants}>
           <h2>Phone</h2>
-          <span>+94 70 77 00 77 1<br/> +94 78 89 12 26 0</span>
+          <span>+1 234 5678</span>
         </motion.div>
       </motion.div>
       <div className="formContainer">
