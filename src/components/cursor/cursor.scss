@@ -1,0 +1,11 @@
+@import "../../app.scss";
+
+.cursor{
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  border: 1px solid white;
+  position: fixed;
+  z-index: 999;
+
+}
