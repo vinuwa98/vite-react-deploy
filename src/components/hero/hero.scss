@@ -1,3 +1,5 @@
+@import '../../app.scss';
+
 .hero {
     height: calc(100vh - 100px);
     overflow: hidden;
@@ -29,6 +31,14 @@
             justify-content: center;
             gap: 40px;
 
+            @include mobile {
+                height: 50%;
+                width: 100%;
+                gap: 7px;
+                align-items: center;
+                text-align: center;
+              }
+
             h2 {
                 font-size: 40px;
                 color: rgb(151, 51, 153);
@@ -37,7 +47,13 @@
 
             h1 {
                 font-size: 64px;
+
+                @include mobile {
+                    font-size: 26px;
+                  }
             }
+
+            
 
             .buttons {
                 button {
@@ -63,6 +79,20 @@
         position: absolute;
         top: 0;
         right: 0;
+
+        @include mobile {
+      
+            left: 0%;
+            bottom: -55%;
+            top: unset;
+
+            img {
+                 // Ensure the image fills the container width
+                max-width: 100%; // Limit max width to control the size on mobile
+                border-radius: 10px; // Optional: add rounded corners for style
+            }
+            
+          }
     }
 
     .slidingTextContainer {

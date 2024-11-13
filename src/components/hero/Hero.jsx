@@ -45,7 +45,7 @@ const starsVariants = {
     transition: {
       repeat: Infinity,
       repeatType: "mirror",
-      duration: 45, // Adjust speed as needed
+      duration: 35, // Adjust speed as needed
     },
   },
 };
