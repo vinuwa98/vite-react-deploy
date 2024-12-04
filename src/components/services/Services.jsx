@@ -45,7 +45,7 @@ const Services = () => {
             <div className="title">
                 <img src="/people.webp" alt="" />
                 <h1>
-                    <motion.b whileHover={{color:"orange"}}>Unique</motion.b> Ideas
+                    <motion.b whileHover={{color:"orange"}}>Fast</motion.b> Learner
                 </h1>
             </div>
             <div className="title">
