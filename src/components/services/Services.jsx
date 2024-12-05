@@ -57,7 +57,7 @@ const Services = () => {
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>App Development</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
                     debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
@@ -65,7 +65,7 @@ const Services = () => {
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>Project Handling</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
                     debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
@@ -73,7 +73,7 @@ const Services = () => {
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>A/L ICT Tutor</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
                     debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
@@ -81,7 +81,7 @@ const Services = () => {
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
+                <h2>Kylix Team Leader</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
                     debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
