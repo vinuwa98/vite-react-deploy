@@ -58,9 +58,9 @@ const Services = () => {
         <motion.div className="listContainer" variants={variants}>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
                 <h2>App Development</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
-                    debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
+                <p> I specialize in creating user friendly mobile applications that cater to diverse needs.
+                    My expertise includes designing and developing apps that focus on functionality, performance, and exceptional 
+                    user experiences.
                 </p>
                 <button>Go</button>
             </motion.div>
@@ -81,7 +81,7 @@ const Services = () => {
                 <button>Go</button>
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
-                <h2>Kylix Team Leader</h2>
+                <h2>Team Leader</h2>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
                     debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
