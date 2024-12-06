@@ -54,7 +54,7 @@
 
             display: flex;
             align-items: center;
-            gap: 50px;
+            gap: 40px;
 
             @include mobile {
                 flex-direction: column;
@@ -108,7 +108,7 @@
         display: flex;
         max-width: 1300px;
         margin: auto;
-        padding-bottom: 20px;
+        padding-bottom: 15px;
 
         @include mobile {
             flex-direction: column;
@@ -116,7 +116,7 @@
           }
 
         .box{
-            padding: 50px;
+            padding: 40px;
             border: 0.5px solid gray;
             display: flex;
             flex-direction: column;

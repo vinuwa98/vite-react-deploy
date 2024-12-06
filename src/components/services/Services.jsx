@@ -66,9 +66,9 @@ const Services = () => {
             </motion.div>
             <motion.div className="box" whileHover={{background:"lightgray", color:"black"}}>
                 <h2>Project Handling</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    At voluptas asperiores illo hic expedita repellat est saepe dolorem voluptates culpa alias,
-                    debitis amet tempora vel et iusto. Nobis, necessitatibus cupiditate!
+                <p> I excel in leading and managing software development projects, ensuring their successful completion from inception 
+                    to deployment. My experience includes spearheading diverse projects such as a University Social Network, a Carbon 
+                    Footprint Calculator, and a Budget Management System.
                 </p>
                 <button>Go</button>
             </motion.div>
