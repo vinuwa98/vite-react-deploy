@@ -29,9 +29,9 @@ const items = [
   },
   {
     id: 5,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "Open Nav",
+    img: "OpenNav.png",
+    desc: "We are proposing an Android mobile application designed to help the people to navigate the OUSL (OPEN UNIVERSITY OF SRI LANKA – NAWALA) and increase their familiarity with the locations of departments, labs, administration offices, faculties and other university facilities. It would allow users to search for buildings or other locations",
   },
 ];
 
