@@ -23,9 +23,9 @@ const items = [
   },
   {
     id: 4,
-    title: "Music App",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
+    title: "රුපියල Manage",
+    img: "RupiyalaManage.png",
+    desc: " For a financial management app like රුපියල Manage implementing a passkey feature adds an extra layer of security, which is crucial for protecting sensitive financial information"
   },
   {
     id: 5,
