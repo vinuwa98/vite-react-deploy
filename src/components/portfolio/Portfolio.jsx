@@ -35,9 +35,9 @@ const items = [
   },
   {
     id: 6,
-    title: "Open Nav",
+    title: "Cash Coach",
     img: "OpenNav.png",
-    desc: "We are proposing an Android mobile application designed to help the people to navigate the OUSL (OPEN UNIVERSITY OF SRI LANKA – NAWALA) and increase their familiarity with the locations of departments, labs, administration offices, faculties and other university facilities. It would allow users to search for buildings or other locations",
+    desc: "we propose in developing an Android application that simplifies expense tracking and financial management and budget tracking. Many people track their spending and stick with budgets resorting to guide methods like recording fees in books. Which is time consuming and susceptible to errors. It is very valuable if it can be recorded as soon as it becomes an income and an expense.  ",
   },
 ];
 
