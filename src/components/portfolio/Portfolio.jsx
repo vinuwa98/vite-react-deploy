@@ -33,6 +33,12 @@ const items = [
     img: "OpenNav.png",
     desc: "We are proposing an Android mobile application designed to help the people to navigate the OUSL (OPEN UNIVERSITY OF SRI LANKA – NAWALA) and increase their familiarity with the locations of departments, labs, administration offices, faculties and other university facilities. It would allow users to search for buildings or other locations",
   },
+  {
+    id: 6,
+    title: "Open Nav",
+    img: "OpenNav.png",
+    desc: "We are proposing an Android mobile application designed to help the people to navigate the OUSL (OPEN UNIVERSITY OF SRI LANKA – NAWALA) and increase their familiarity with the locations of departments, labs, administration offices, faculties and other university facilities. It would allow users to search for buildings or other locations",
+  },
 ];
 
 const Single = ({ item }) => {
