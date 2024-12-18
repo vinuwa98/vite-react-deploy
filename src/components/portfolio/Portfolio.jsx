@@ -36,9 +36,10 @@ const items = [
   {
     id: 6,
     title: "Cash Coach",
-    img: "OpenNav.png",
+    img: "CashCoach.png",
     desc: "we propose in developing an Android application that simplifies expense tracking and financial management and budget tracking. Many people track their spending and stick with budgets resorting to guide methods like recording fees in books. Which is time consuming and susceptible to errors. It is very valuable if it can be recorded as soon as it becomes an income and an expense.  ",
   },
+  
 ];
 
 const Single = ({ item }) => {
