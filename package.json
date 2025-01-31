@@ -1,6 +1,7 @@
 {
   "name": "vinod-warnakulasooriya",
-  "private": true,
+  "homepage": "https://vinuwa98.github.io/vite-react-deploy/",
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
